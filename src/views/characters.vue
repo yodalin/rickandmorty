@@ -1,45 +1,4 @@
-<!-- <template>
 
-<div class="p-4 min-h-screen flex flex-col items-center">
-          
-   
-   
- <p v-if="error">Something went wrong...</p>
- <p v-if="loading">Loading...</p>
-
-   <div v-else="character" class="ml-4 mt-6">
-    <div class="flex flex-col max-w-2xl">
-    <b> <h1>character</h1></b>
-        <img :src="result.character.image" alt="" style="width: 400px; height: 300px;"> <br>
-         <p class="text-green-500">{{ result.character.name }} <br></p>
-     <p class="text-green-500"> {{ result.character.status }} <br></p>
-     <p class="text-green-500">{{ result.character.gender }} <br></p>
-     <p class="text-green-500">{{ result.character.species }} </p>
-    
-</div>
-</div>
-</div>
- <ul class="flex flex-wrap">
-
-      <li v-for="seri in result.character.episode"
-              :key="seri.id">
-            
-              <div class="flex justify-center">
-                <div class="text-sm w-[300px]">
-                  Episode Name :
-                  <span class="text-blue-400"> {{ seri.name }}<br /></span>
-                   Episode :
-                  <span class="text-blue-400">{{ seri.episode }}<br /></span>
-                  Episode AirDate :
-                  <span class="text-blue-400">{{ seri.air_date }}<br /></span>
-                  Episode Created :
-                 <span class="text-blue-400">{{ seri.created }}<br /></span>
-                </div>
-                 </div>
-                 </li>
-                </ul>
-
-</template> -->
 <template>
     <div class="p-4 min-h-screen flex flex-col items-center" id="characters">
 

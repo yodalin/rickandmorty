@@ -4,7 +4,7 @@ import { useQuery } from '@vue/apollo-composable'
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/vue'
 
-// Import Swiper styles
+
 import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
@@ -140,41 +140,7 @@ export default {
                     
                   
                   </div>
-            
-                    <!-- <div class="flex">
-                      <p v-if="error">Something went wrong...</p>
-                      <p v-if="loading">Loading....</p> -->
-                      <!-- <vue-ai-carousel v-else :images="characterImages"></vue-ai-carousel> -->
-                      <!-- <div v-for="episodes in result.episodes.results" :key="episodes.id">
-                     -->
-                            
-                        
-                      
-                  
-                  
-
-                  <!-- <swiper
-                    :modules="modules"
-                    :slides-per-view="8"
-                    :space-between="50"
-                    navigation
-                    :pagination="{ clickable: true }"
-                    :scrollbar="{ draggable: true }"
-                    @swiper="onSwiper"
-                    @slideChange="onSlideChange"
-                    class="mySwiper"
-                  > -->
-                  <!-- <swiper-slide v-for="episode in result.episodes.results" :key="episode.id" style="border-width: 4px;">
-          <router-link :to="{name: 'about' , params: {id: episode.id}}">
-          <div>
-            <img :src="episode.image" alt="" style="width: 900px; height: 50px;" />
-          <p>{{ episode.name }}</p>
-        </div>
-          ></router-link></swiper-slide
-        >
-        ...
-      </swiper>
-    </div> --><div>
+            <div>
     <p v-if="error">Something went wrong...</p>
     <p v-if="loading">Loading....</p>
     <div v-else class="flex flex-wrap justify-center">
@@ -205,14 +171,7 @@ export default {
     <div class="flex">
       <p v-if="error">Something went wrong...</p>
       <p v-if="loading">Loading...</p>
-      <!-- <vue-ai-carousel v-else :images="characterImages"></vue-ai-carousel> -->
-
-      <!-- <VueAIcarousel v-else :Property="{ ID: 'id' }" style="margin-left: 4cm; width: 900px">
-        <div v-for="character in result.characters.results" :key="character.id">
-          <img :src="character.image" alt="" />
-          <p>{{ character.name }}</p>
-        </div>
-      </VueAIcarousel> -->
+      
       <swiper
         :modules="modules"
         :slides-per-view="8"
@@ -240,54 +199,7 @@ export default {
     <div class="container mx-auto mt-8 px-4 md:px-0 ">
       <h1 class="text-2xl font-bold mb-4 text-yellow-500 text-center border-full bg-black">Locations</h1>
       
-        <!-- <div class="flex">
-          <p v-if="error">Something went wrong...</p>
-          <p v-if="loading">Loading....</p>
-          <!-- <vue-ai-carousel v-else :images="characterImages"></vue-ai-carousel> -->
-
-          <!-- <VueAIcarousel v-else :Property="{ ID: 'id' }" style="margin-left: 4cm; width: 900px">
-            <div v-for="locations in result.locations.results" :key="locations.id">
-              <!-- <img :src="locations.nmae" alt="">  -->
-              <!-- <p>{{ locations.name }}</p>
-              <p>{{ locations.dimention }}</p> -->
-            <!-- </div> -->
-          <!-- </VueAIcarousel> -->
-        <!-- </div> --> 
-       
-      
-      <!-- <div class="flex">
-      <p v-if="error">Something went wrong...</p>
-      <p v-if="loading">Loading...</p> -->
-      <!-- <vue-ai-carousel v-else :images="characterImages"></vue-ai-carousel> -->
-
-      <!-- <VueAIcarousel v-else :Property="{ ID: 'id' }" style="margin-left: 4cm; width: 900px">
-        <div v-for="character in result.characters.results" :key="character.id">
-          <img :src="character.image" alt="" />
-          <p>{{ character.name }}</p>
-        </div>
-      </VueAIcarousel> -->
-      <!-- <swiper
-        :modules="modules"
-        :slides-per-view="8"
-        :space-between="50"
-        navigation
-        :pagination="{ clickable: true }"
-        :scrollbar="{ draggable: true }"
-        @swiper="onSwiper"
-        @slideChange="onSlideChange"
-        class="mySwiper"
-      > -->
-        <!-- <swiper-slide v-for="location in result.locations.results" :key="location.id">
-          <router-link :to="{name: 'abot' , params: {id: location.id}}">
-            <div>
-            <img :src="location.image" alt="" style="width: 400px; height: 100px;" />
-            <p> {{  location.name }}</p></div> -->
-          <!-- <p>{{ location.dimension }}</p> -->
-          <!-- ></router-link></swiper-slide
-        >
-        ...
-      </swiper>
-    </div> -->
+        
     <div>
       
       <p v-if="error">Something went wrong...</p>
@@ -335,8 +247,7 @@ export default {
         </div>
       </div>
       <hr class="my-6 border-gray-700" />
-
-      <p class="text-center text-sm">© 2024 YodaMovieSite. All rights reserved.</p>
+      <p class="text-center text-sm">© 2024 YodaMovieSite.All rights reserved.</p>
     </footer>
   
 </template>

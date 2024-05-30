@@ -47,25 +47,7 @@ import gql from 'graphql-tag'
 
 const route = useRoute()
 
-// const id = useRoute().params.id;
-// const episodeQuery = gql`
-// query{
-// episode(id:${id}){
-//     episode
-//     name
-//     air_date
-//     created
-//     characters{
-//       name
-//       image
-//       status
-//       spicies
-//       gender
-//     }
-//     }
-//   }
-// `;
-// const { result, error, loading } = useQuery(episodeQuery);
+
 
 const id = useRoute().params.id;
 const { result, loading, error } =  useQuery(gql`
